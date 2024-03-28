@@ -14,19 +14,23 @@ function slice(str, start, end) {
     }
     return newStr;
 }
-// let login = function (user { login: string; password: number}): void {
-//   console.log(`${user.login} and ${user.password}`)
-// }
-// function login(user: { login: string; password: number }): void {
-//   if (user.login || user.password) {
-//     console.log(`Hello ${user.login} `);
-//   }
-// }
-// login({ login: "Torrent", password: 112 });
-// const user: User = {
-//   login: "login",
-//   email: "email",
-//   isOnline: true,
-//   lastVisited: new Date(),
-// };
-// console.log(user.lastVisited);
+const user1 = {
+    login: "Tatem",
+    email: "borenkovmv@gmail.com",
+    password: "Tatem1985",
+    isOnline: false,
+    lastVisited: new Date(2024, 3, 28),
+};
+const admin1 = {
+    login: "Admin",
+    email: "borenkovmv@gmail.com",
+    password: "Tatem1985",
+    isOnline: false,
+    lastVisited: new Date(2024, 3, 28, 12.0),
+    role: "Super Admin",
+};
+function login(user) {
+    if ((user.login.length > 0, user.password.length > 0)) {
+        console.log(`Hello ${user.login} Date ${user.lastVisited}`);
+    }
+}

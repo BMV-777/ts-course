@@ -25,37 +25,43 @@ function slice(str: string, start: number, end?: number): string {
 interface User {
   login: string;
   email: string;
-  password: number;
+  password: string;
   isOnline: boolean;
   lastVisited: Date;
 }
 
 interface Admin {
   login: string;
-  email: number;
-  password: number;
+  email: string;
+  password: string;
   isOnline: boolean;
   lastVisited: Date;
-  role?: string;
+  role: string;
 }
 
-// let login = function (user { login: string; password: number}): void {
-//   console.log(`${user.login} and ${user.password}`)
-// }
+const user1: User = {
+  login: "Tatem",
+  email: "borenkovmv@gmail.com",
+  password: "Tatem1985",
+  isOnline: false,
+  lastVisited: new Date(2024, 3, 28),
+};
 
-// function login(user: { login: string; password: number }): void {
-//   if (user.login || user.password) {
-//     console.log(`Hello ${user.login} `);
-//   }
-// }
+const admin1: Admin = {
+  login: "Admin",
+  email: "borenkovmv@gmail.com",
+  password: "Tatem1985",
+  isOnline: false,
+  lastVisited: new Date(2024, 3, 28, 12.0),
+  role: "Super Admin",
+};
 
-// login({ login: "Torrent", password: 112 });
-
-// const user: User = {
-//   login: "login",
-//   email: "email",
-//   isOnline: true,
-//   lastVisited: new Date(),
-// };
-
-// console.log(user.lastVisited);
+function login(user: {
+  login: string;
+  password: string;
+  lastVisited: Date;
+}): void {
+  if ((user.login.length > 0, user.password.length > 0)) {
+    console.log(`Hello ${user.login} Date ${user.lastVisited}`);
+  }
+}

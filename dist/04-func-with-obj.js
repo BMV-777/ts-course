@@ -21,3 +21,4 @@ function printName(user) {
 }
 printName({ firstName: "Jori" });
 printName({ firstName: "Jori", lastName: "Buter" });
+//2.5.4
