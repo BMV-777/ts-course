@@ -25,5 +25,3 @@ function printName(user: { firstName: string; lastName?: string }): void {
 
 printName({ firstName: "Jori" });
 printName({ firstName: "Jori", lastName: "Buter" });
-
-//2.5.4
