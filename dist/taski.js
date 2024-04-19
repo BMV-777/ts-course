@@ -34,3 +34,42 @@ function login(user) {
         console.log(`Hello ${user.login} Date ${user.lastVisited}`);
     }
 }
+const junior = {
+    login: "Gary",
+    skills: ["html, css, js"],
+    level: "junior",
+};
+const middle = {
+    login: "Merry",
+    skills: ["html, css, js, react"],
+    level: "middle",
+};
+function gradeDeveloper(dev, newLevel) {
+    dev.level = newLevel;
+}
+const senior = {
+    login: "Maks",
+    skills: ["html, css, js, react, ts"],
+    level: "senior",
+};
+console.log(gradeDeveloper(senior, "senior"));
+// function gradeDeveloper(developer: {
+//   login: string;
+//   skills: string[];
+//   level: Level;
+// }): void {
+//   if (developer.level === "junior") {
+//     console.log(
+//       `Hello Junior! ${developer.login} you skills:  ${developer.skills}`
+//     );
+//   } else if (developer.level === "middle") {
+//     console.log(
+//       `Hello Middle! ${developer.login} you skills:  ${developer.skills}`
+//     );
+//   } else if (developer.level === "senior") {
+//     console.log(
+//       `Hello Senior! ${developer.login} you skills:   ${developer.skills}`
+//     );
+//   }
+// }
+// gradeDeveloper(senior);

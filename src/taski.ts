@@ -65,3 +65,59 @@ function login(user: {
     console.log(`Hello ${user.login} Date ${user.lastVisited}`);
   }
 }
+
+//3
+
+type Level = "junior" | "middle" | "senior";
+
+interface Developer {
+  login: string;
+  skills: string[];
+  level: Level;
+}
+
+const junior: Developer = {
+  login: "Gary",
+  skills: ["html, css, js"],
+  level: "junior",
+};
+
+const middle: Developer = {
+  login: "Merry",
+  skills: ["html, css, js, react"],
+  level: "middle",
+};
+
+function gradeDeveloper(dev: { level: Level }, newLevel: Level) {
+  dev.level = newLevel;
+}
+
+const senior: Developer = {
+  login: "Maks",
+  skills: ["html, css, js, react, ts"],
+  level: "senior",
+};
+
+console.log(gradeDeveloper(senior, "senior"));
+
+// function gradeDeveloper(developer: {
+//   login: string;
+//   skills: string[];
+//   level: Level;
+// }): void {
+//   if (developer.level === "junior") {
+//     console.log(
+//       `Hello Junior! ${developer.login} you skills:  ${developer.skills}`
+//     );
+//   } else if (developer.level === "middle") {
+//     console.log(
+//       `Hello Middle! ${developer.login} you skills:  ${developer.skills}`
+//     );
+//   } else if (developer.level === "senior") {
+//     console.log(
+//       `Hello Senior! ${developer.login} you skills:   ${developer.skills}`
+//     );
+//   }
+// }
+
+// gradeDeveloper(senior);
