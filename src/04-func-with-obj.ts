@@ -16,7 +16,10 @@ const obj2 = {
 printPoint(obj1);
 printPoint(obj2);
 
-function printName(user: { firstName: string; lastName?: string }): void {
+export function printName(user: {
+  firstName: string;
+  lastName?: string;
+}): void {
   console.log("Hello", user.firstName.toUpperCase());
   if (user.lastName) {
     console.log("Nice to meet you Mr", user.lastName.toUpperCase());

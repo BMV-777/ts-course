@@ -22,7 +22,7 @@ function slice(str: string, start: number, end?: number): string {
 
 //2
 
-interface User {
+export interface User {
   login: string;
   email: string;
   password: string;

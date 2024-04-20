@@ -1,5 +1,6 @@
 "use strict";
 //1
+Object.defineProperty(exports, "__esModule", { value: true });
 function slice(str, start, end) {
     let newStr = "";
     let lastIndex;
