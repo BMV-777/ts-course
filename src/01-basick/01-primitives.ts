@@ -5,7 +5,7 @@
 // console.log(sum2(2, 2));
 
 // 2/2.3
-interface User {
+export interface User {
   readonly email: string;
   password: string;
   login: string;
