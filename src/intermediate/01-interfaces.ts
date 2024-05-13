@@ -1,29 +1,29 @@
 //  readonly - нельзя перезаписать значение
 
-interface User {
+export interface User {
   readonly email: string;
   readonly login: string;
   password: string;
 }
 
-interface User {
+export interface User {
   isOnline?: boolean;
 }
 
 // const user1: User = {};
 
-interface Persons {
+export interface Persons {
   readonly firstName: string;
   lastName: string;
   phone?: string;
   yearOgBirth?: number;
 }
 
-interface Employee extends User, Persons {
-  contractStart: Date;
+export interface Employee extends User, Persons {
+  contractStart?: Date;
 }
 
-interface Developer extends Employee {
+export interface Developer extends Employee {
   skills: string[];
   phone: string;
   level: "junior" | "middle" | "senior";
@@ -31,4 +31,10 @@ interface Developer extends Employee {
   code?: (arg: string) => void;
 }
 
-const user1: Employee = {};
+const user1: Employee = {
+  firstName: "Pupkin",
+  lastName: "Meri",
+  login: "1234",
+  password: "899",
+  email: "borenkov",
+};
