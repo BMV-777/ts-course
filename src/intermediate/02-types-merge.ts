@@ -29,6 +29,8 @@ type Employee = {
 } & Persons &
   User;
 
+// const user1: Employee = {};
+
 type Developer = {
   skills: string[];
   phone: string;
@@ -47,3 +49,5 @@ const user2: Developer = {
   skills: ["html", "css", "js", "react", "docker"],
   password: "3222",
 };
+
+export {};
