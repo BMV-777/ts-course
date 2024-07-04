@@ -7,7 +7,7 @@ function log(name: string, userId?: string): void {
 
 log("Maks");
 
-function average(...nums: number[]) {
+export function average(...nums: number[]) {
   const sum = nums.reduce((current, total) => current + total, 0);
 
   return console.log(sum / nums.length);

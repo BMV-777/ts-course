@@ -25,7 +25,7 @@ function add(value: any): any {
 
 const handle = <T>(value: T[]): T => value[0];
 
-add("csc", "efefe");
+// add("csc", "hello");
 
 interface Modal<T> {
   title: string;
@@ -51,3 +51,5 @@ const obj: Modal<Array<number>> = {
 
 // console.log(append([33], [4, 8, 7]));
 // console.log(append1(77, [4, 8, 7]));
+
+export {};

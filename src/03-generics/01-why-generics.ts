@@ -10,3 +10,5 @@ interface Model {
   name: string;
   value: number; //number [] boolean
 }
+
+export {};

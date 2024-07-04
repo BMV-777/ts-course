@@ -3300,8 +3300,8 @@ setTimeout(
     console.log(x);
     console.log("В середине");
   },
-  2000,
-  50
+  1000,
+  90
 );
 
 console.log("Последний вызов");
